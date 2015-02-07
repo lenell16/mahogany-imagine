@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accident Reporting App</title>
+    <link rel="stylesheet" href="assets/css/skeleton/normalize.css">
+    <link rel="stylesheet" href="assets/css/skeleton/skeleton.css">
+    <!-- TODO: Movee to separte file -->
+    <style>
+      #map-canvas {
+        height: 800px;
+      }
+      #over {
+        font-size:5em;
+        position:absolute;
+        top:20px;
+        left:20px;
+        z-index:2
+      }
+    </style>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALF6v195r1T-Vmxa_0_RknOH3Ylx01kAc&sensor=false"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="assets/libs/easeljs/lib/easeljs-0.8.0.min.js"></script>
+    <script src="assets/js/newApp.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="three columns">
+      TEST
+    </div>
+
+    <!-- TODO: move position to own file -->
+    <div class="nine columns" style="position:relative;">
+      <div id="map-canvas" ></div>
+      <div id="over">
+        <canvas id="over-canvas" width="300" height="300"></canvas>
+      </div>
+
+    </div>
+  </body>
+</html>
